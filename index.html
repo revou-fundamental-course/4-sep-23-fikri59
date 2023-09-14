@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>mini coding || kalkulator</title>
+    <style></style>
+  </head>
+  <body>
+    <h1 class="header">Kalkulator Luas dan Keliling Persegi</h1>
+
+    <div align="center">
+      <img src="./segiempat.png" width="30%" />
+    </div>
+
+    <h5></h5>
+    <section class="InputSection">
+      <label for="hitung">Rumus Luas Persegi  S * S</label>
+      <h1 class="h1"> Sisi * Sisi</h1>
+      <input
+        type="number" name="hitung" id="hitung" placeholder="Masukan bilangan"
+      />
+    </section>
+    <section class="inputButtonSection">
+      <button onclick="luaspersegi()">Hitung Luas Persegi</button>
+     
+      
+    </section>
+    <section class="InputSection">
+      <label for="hitung">Rumus keliling Persegi 4 * S</label>
+      <h1 class="h1"> Sisi + Sisi + Sisi + Sisi</h1>
+      <input
+        type="number" name="hitung2" id="hitung2" placeholder="Masukan bilangan"
+      />
+    </section>
+    <section class="inputButtonSection">
+     
+      <button onclick="kelilingpersegi()">Hitung Keliling Persegi</button>
+      
+    </section>
+    <script>
+    function luaspersegi() {
+      let hitung = document.getElementById("hitung").value;
+      alert("Hasil Perhitungan Luas Persegi adalah = " + hitung * hitung);
+    }
+    function kelilingpersegi() {
+      let hitung2 = document.getElementById("hitung2").value;
+      alert("Hasil Perhitungan Keliling Persegi adalah = " + 4 * hitung2);
+    }
+    
+  </script>
+    
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Muhammad fikriansyah JP. Hak & Hak Cipta </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
